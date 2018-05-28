@@ -10,8 +10,8 @@ class Content extends Component {
       const watchedMovie =  {
             name: watchedData.Title,
             Poster: watchedData.Poster,
-            overview: 'dsfsdfsdfsdf',
-            vote_average: 100
+            overview: '',
+            vote_average: watchedData.imdbRating
         }
         console.log(watchedMovie);
         this.props.dispatch({
