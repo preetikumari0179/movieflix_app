@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <div className="App">
         <header class="Header">
-          <div id="logo" class="Logo">
+          <div id="logo" class="Logo">Moviefilx
           </div>
           <Search></Search>
         </header>
