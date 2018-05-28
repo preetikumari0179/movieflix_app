@@ -12,10 +12,10 @@
   }
 
   .Hero .content p {
-    padding-top: 60px;
+    padding-top: 50px;
 }
 .Item {
-  width:100px;
+  width:200px;
   background-repeat: no-repeat;
   background-size: auto;
 }

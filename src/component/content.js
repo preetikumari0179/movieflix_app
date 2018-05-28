@@ -13,7 +13,6 @@ class Content extends Component {
             overview: '',
             vote_average: watchedData.imdbRating
         }
-        console.log(watchedMovie);
         this.props.dispatch({
             type: 'WATCHED_DATA',
             watchedMovie
@@ -29,11 +28,9 @@ class Content extends Component {
                     <div className="ContentBox2">
                         <h2>{this.props.searchMovieData.Title}</h2>
                         <h5>{this.props.searchMovieData.Released}</h5>
-                        {/* {this.props.rating.map((rating, index) => (
-                            <h5>IMDB Reating: {rating.Value}</h5>
-                        ))} */}
                         <h5>IMDB Reating: {this.props.searchMovieData.imdbRating}</h5>
-                        <p>{this.props.searchMovieData.Title} Won {this.props.searchMovieData.Awards} directed by {this.props.searchMovieData.Director}
+                        <p> <h2>Description</h2>
+                            {this.props.searchMovieData.Title} Won {this.props.searchMovieData.Awards} directed by {this.props.searchMovieData.Director}
                             {this.props.searchMovieData.Title} available in {this.props.searchMovieData.Language} </p>
                         <div className="button-wrapper">
                         </div>

@@ -30,7 +30,7 @@ class Watched extends Component {
         return (
             <div className="TitleList" data-loaded="true">
                 <div className="Title">
-                    <h1>Watched Movies List</h1>
+                    <h1>Watched Movie List...</h1>
                     <div className="titles-wrapper">
                         {titles}
                     </div>
@@ -40,7 +40,6 @@ class Watched extends Component {
     }
 }
 const mapStateToProps = (state) => {
-    console.log(state);
     if (state) {
         return {
             Watched: state.watchReducer ? state.watchReducer : [],
